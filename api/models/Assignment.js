@@ -14,17 +14,33 @@ module.exports = {
       autoIncrement: true
     },
     student_id: {
+      required: 'true',
       type: 'integer'
     },
+    // student: {
+    //   model: "student",
+    //   columnName: "student_id"
+    // },
     assignment_nbr: {
+      required: 'true',
       type: 'integer'
     },
     grade_id: {
+      required: 'true',
       type: 'integer'
     },
-    class_id: {
+    // grade: {
+    //   model: "grade",
+    //   columnName: "grade_id"
+    // },
+    course_id: {
+      required: 'true',
       type: 'integer'
     }
+    // course: {
+    //   model: "course",
+    //   columnName: "course_id"
+    // }
   },
   autoPK: false
 };
